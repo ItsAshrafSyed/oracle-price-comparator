@@ -1,4 +1,4 @@
-import { Connection, PublicKey } from "@solana/web3.js"
+import { PublicKey } from "@solana/web3.js"
 // @ts-ignore
 import * as BufferLayout from "buffer-layout"
 import fs from "fs"
@@ -6,14 +6,14 @@ import path from "path"
 import { connection } from "./utils/connection"
 import extractTokens from "./utils/extractTokens"
 
-type TokenEntry = {
-	symbol: string
-	intOracleAddress: string
-	pythPriceId: string
-	decimals: number
-}
+const s64 = (property: string) =>
+	BufferLayout.struct([BufferLayout.u32("low"), BufferLayout.s32("high")], property)
 
-const layout = BufferLayout.struct([BufferLayout.blob(20), BufferLayout.nu64("price")])
+const layout = BufferLayout.struct([
+	BufferLayout.blob(8),
+	s64("price"),
+	BufferLayout.s32("exponent"),
+])
 
 async function fetchInternalPrices(): Promise<Record<string, number>> {
 	const tokens = extractTokens()
@@ -30,7 +30,9 @@ async function fetchInternalPrices(): Promise<Record<string, number>> {
 			const buffer = accountInfo.data
 			// console.log(`${token.symbol}: raw =`, buffer.toString("hex").slice(0, 64))
 			const decoded = layout.decode(buffer)
-			const price = Number(decoded.price) / 10 ** token.decimals
+			const rawPrice = decoded.price.high * 2 ** 32 + decoded.price.low
+			const exponent = Number(decoded.exponent)
+			const price = rawPrice * 10 ** exponent
 
 			// console.log(`${token.symbol}: ${price}`)
 			prices[token.symbol] = price
@@ -39,8 +41,8 @@ async function fetchInternalPrices(): Promise<Record<string, number>> {
 		}
 	}
 
-	const outputPath = path.resolve(__dirname, "../data/tokenData.json")
-	fs.writeFileSync(outputPath, JSON.stringify(prices, null, 2), "utf-8")
+	// const outputPath = path.resolve(__dirname, "../data/tokenData.json")
+	// fs.writeFileSync(outputPath, JSON.stringify(prices, null, 2), "utf-8")
 
 	return prices
 }

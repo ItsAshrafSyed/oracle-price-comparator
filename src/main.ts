@@ -18,13 +18,28 @@ async function main() {
 	const pythPriceIds = Object.values(pythPriceIdMap)
 	const pythPrices = await fetchLatestPythPrices(pythPriceIds)
 
+	const result: Record<string, any> = {}
+
 	for (const symbol of Object.keys(internalPrices)) {
 		const internal = internalPrices[symbol]
 		const priceId = pythPriceIdMap[symbol.toUpperCase()]?.toLowerCase().replace(/^0x/, "")
 		const pyth = pythPrices[priceId]
 
-		console.log(`${symbol}: Internal=${internal}, Pyth=${pyth}`)
+		const diff = internal !== undefined && pyth !== undefined ? internal - pyth : undefined
+		const diffPercent =
+			internal !== undefined && pyth !== undefined && diff !== undefined
+				? (diff / pyth) * 100
+				: undefined
+
+		result[symbol] = {
+			internal,
+			pyth,
+			diff,
+			diffPercent,
+		}
 	}
+
+	console.log(JSON.stringify(result, null, 2))
 }
 
 main()
