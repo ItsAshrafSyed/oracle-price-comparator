@@ -4,7 +4,7 @@ import * as BufferLayout from "buffer-layout"
 import fs from "fs"
 import path from "path"
 import { connection } from "./utils/connection"
-import extractTokens from "./utils/extractTokens"
+import configTokens from "../data/configTokens.json"
 
 const s64 = (property: string) =>
 	BufferLayout.struct([BufferLayout.u32("low"), BufferLayout.s32("high")], property)
@@ -16,7 +16,7 @@ const layout = BufferLayout.struct([
 ])
 
 async function fetchInternalPrices(): Promise<Record<string, number>> {
-	const tokens = extractTokens()
+	const tokens = configTokens
 	const prices: Record<string, number> = {}
 
 	for (const token of tokens) {

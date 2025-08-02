@@ -1,15 +1,14 @@
 import axios from "axios"
+import configTokens from "../data/configTokens.json"
 
-export async function fetchLatestPythPrices(
-	pythPriceIds: string[]
-): Promise<Record<string, number>> {
+export async function fetchLatestPythPrices(): Promise<Record<string, number>> {
 	const result: Record<string, number> = {}
 	try {
-		const queryParams = pythPriceIds.map((id) => `ids[]=${id}`).join("&")
+		const queryParams = Object.values(configTokens)
+			.map((token) => `ids[]=${token.pythPriceId}`)
+			.join("&")
 		const url = `https://hermes.pyth.network/v2/updates/price/latest?${queryParams}&parsed=true&ignore_invalid_price_ids=true`
 		const { data } = await axios.get(url)
-
-		// console.log("Raw Pyth API response:", data)
 
 		if (Array.isArray(data?.parsed)) {
 			for (const entry of data.parsed) {
@@ -22,7 +21,6 @@ export async function fetchLatestPythPrices(
 					result[entry.id.toLowerCase()] = price
 				}
 			}
-			// console.log("Parsed prices:", result)
 		} else {
 			console.error("Unexpected Pyth API response structure:", data)
 		}

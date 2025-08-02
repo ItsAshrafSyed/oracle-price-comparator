@@ -36,7 +36,7 @@ export default function extractTokens(): TokenEntry[] {
 	return uniqueBySymbol
 }
 
-// const tokenData = extractTokens()
+const tokenData = extractTokens()
 
-// const outputPath = path.resolve(__dirname, "../../data/configTokens.json")
-// fs.writeFileSync(outputPath, JSON.stringify(tokenData, null, 2), "utf-8")
+const outputPath = path.resolve(__dirname, "../../data/configTokens.json")
+fs.writeFileSync(outputPath, JSON.stringify(tokenData, null, 2), "utf-8")

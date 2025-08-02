@@ -1,170 +1,170 @@
 [
-  {
-    "symbol": "USDC",
-    "intOracleAddress": "GCtJxWQ57B3BJUYdWrhb3TUxzeiDUx275ZCxKkTV6G3N",
-    "pythPriceId": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
-    "decimals": 6,
-    "extOracleAddress": "Dpw1EAVrSB1ibxiDQyTAW6Zip3J4Btk2x4SgApQCeFbX",
-    "pythTicker": "Crypto.USDC/USD"
-  },
-  {
-    "symbol": "SOL",
-    "intOracleAddress": "DXqtMo8qRBfHcK11kBnSaCSXkWKk1huMf94R6sAxLHtf",
-    "pythPriceId": "0xef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d",
-    "decimals": 9,
-    "extOracleAddress": "7UVimffxr9ow1uXYxsr4LHAcV58mLzhmwaeKvJ1pjLiE",
-    "pythTicker": "Crypto.SOL/USD"
-  },
-  {
-    "symbol": "BTC",
-    "intOracleAddress": "BYj2rSPK5JcvvVZGBN88j1TmW7mmtf1Rx3GMTqvdwB5c",
-    "pythPriceId": "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43",
-    "decimals": 8,
-    "extOracleAddress": "4cSM2e6rvbGQUFiJbqytoVMi5GgghSMr8LwVrT9VPSPo",
-    "pythTicker": "Crypto.BTC/USD"
-  },
-  {
-    "symbol": "ETH",
-    "intOracleAddress": "31QzXaaxY3XTfLM6QmSfELLFowQaNe6ytiT3GXpxBcbh",
-    "pythPriceId": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
-    "decimals": 8,
-    "extOracleAddress": "42amVS4KgzR9rA28tkVYqVXjq9Qa8dcZQMbH5EYFX6XC",
-    "pythTicker": "Crypto.ETH/USD"
-  },
-  {
-    "symbol": "JitoSOL",
-    "intOracleAddress": "65cokPf6QQmNpdwurPQu1s1QWPdumMX8iJYjdhALsbGW",
-    "pythPriceId": "0x67be9f519b95cf24338801051f9a808eff0a578ccb388db73b7f6fe1de019ffb",
-    "decimals": 9,
-    "extOracleAddress": "AxaxyeDT8JnWERSaTKvFXvPKkEdxnamKSqpWbsSjYg1g",
-    "pythTicker": "Crypto.JITOSOL/USD"
-  },
-  {
-    "symbol": "XAU",
-    "intOracleAddress": "9JUUs2uFLHmPo6gTXJecYB6txdY2VXV2tfu2WQQjsNAu",
-    "pythPriceId": "0x765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2",
-    "decimals": 6,
-    "extOracleAddress": "2uPQGpm8X4ZkxMHxrAW1QuhXcse1AHEgPih6Xp9NuEWW",
-    "pythTicker": "Metal.XAU/USD"
-  },
-  {
-    "symbol": "XAG",
-    "intOracleAddress": "8Fwj8PHmoXzX7XMSiCiSvCwXTdfJ9U9SPcu4gbN3mCUN",
-    "pythPriceId": "0xf2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e",
-    "decimals": 6,
-    "extOracleAddress": "H9JxsWwtDZxjSL6m7cdCVsWibj3JBMD9sxqLjadoZnot",
-    "pythTicker": "Metal.XAG/USD"
-  },
-  {
-    "symbol": "EUR",
-    "intOracleAddress": "Fs9bKiF3eZMkQic39UD96A1jTqgrYHARCaPQ5MppYWay",
-    "pythPriceId": "0xa995d00bb36a63cef7fd2c287dc105fc8f3d93779f062f09551b0af3e81ec30b",
-    "decimals": 6,
-    "extOracleAddress": "Fu76ChamBDjE8UuGLV6GP2AcPPSU6gjhkNhAyuoPm7ny",
-    "pythTicker": "FX.EUR/USD"
-  },
-  {
-    "symbol": "GBP",
-    "intOracleAddress": "Gsy7UDnDQYVKcEcNtu8TZbjuE5eDaMsdQEJwygmMT6Ro",
-    "pythPriceId": "0x84c2dde9633d93d1bcad84e7dc41c9d56578b7ec52fabedc1f335d673df0a7c1",
-    "decimals": 6,
-    "extOracleAddress": "G25Tm7UkVruTJ7mcbCxFm45XGWwsH72nJKNGcHEQw1tU",
-    "pythTicker": "FX.GBP/USD"
-  },
-  {
-    "symbol": "CRUDEOIL",
-    "intOracleAddress": "5qLQ3BT7JCf4fUxoAH1xZwHCca9fZuuTWTgTsNxLNcoZ",
-    "pythPriceId": "0xeca3fb7e6be5be55a01678ee00f6405b9e4986e32d539ccd2a06a57e0c615880",
-    "decimals": 6,
-    "extOracleAddress": "nt1JuGVRBJNrvMpdZt9RJnxVSxRuoeVx5LRq3R1bS16",
-    "pythTicker": "Commodities.WTI1M"
-  },
-  {
-    "symbol": "JUP",
-    "intOracleAddress": "72rMJMG5jyAsiVXkxde2zWgELXj1yfqc3sYgAj1ENYns",
-    "pythPriceId": "0x0a0408d619e9380abad35060f9192039ed5042fa6f82301d0e48bb52be830996",
-    "decimals": 6,
-    "extOracleAddress": "7dbob1psH1iZBS7qPsm3Kwbf5DzSXK8Jyg31CTgTnxH5",
-    "pythTicker": "Crypto.JUP/USD"
-  },
-  {
-    "symbol": "PYTH",
-    "intOracleAddress": "7HWfFZn87wBjpexboZBcV35UjTYmeaS9Kdg5jcHsbqdr",
-    "pythPriceId": "0x0bbf28e9a841a1cc788f6a361b17ca072d0ea3098a1e5df1c3922d06719579ff",
-    "decimals": 6,
-    "extOracleAddress": "8vjchtMuJNY4oFQdTi8yCe6mhCaNBFaUbktT482TpLPS",
-    "pythTicker": "Crypto.PYTH/USD"
-  },
-  {
-    "symbol": "JTO",
-    "intOracleAddress": "E2jXqDkASx9njXWhnnjDGxefcEw8LoeyD3We2g3Ja5pX",
-    "pythPriceId": "0xb43660a5f790c69354b0729a5ef9d50d68f1df92107540210b9cccba1f947cc2",
-    "decimals": 9,
-    "extOracleAddress": "7ajR2zA4MGMMTqRAVjghTKqPPn4kbrj3pYkAVRVwTGzP",
-    "pythTicker": "Crypto.JTO/USD"
-  },
-  {
-    "symbol": "RAY",
-    "intOracleAddress": "4RBgyAzw964UJa7QTjpq52h29YrBuyCrkfYAXbWzgV5v",
-    "pythPriceId": "0x91568baa8beb53db23eb3fb7f22c6e8bd303d103919e19733f2bb642d3e7987a",
-    "decimals": 6,
-    "extOracleAddress": "Hhipna3EoWR7u8pDruUg8RxhP5F6XLh6SEHMVDmZhWi8",
-    "pythTicker": "Crypto.RAY/USD"
-  },
-  {
-    "symbol": "KMNO",
-    "intOracleAddress": "4tNprL7ziCzxHotNnuNWE8Z8znvQbg2irng4SEyjy9rs",
-    "pythPriceId": "0xb17e5bc5de742a8a378b54c9c75442b7d51e30ada63f28d9bd28d3c0e26511a0",
-    "decimals": 6,
-    "extOracleAddress": "ArjngUHXrQPr1wH9Bqrji9hdDQirM6ijbzc1Jj1fXUk7",
-    "pythTicker": "Crypto.KMNO/USD"
-  },
-  {
-    "symbol": "BONK",
-    "intOracleAddress": "J7ruj3xnMc3etbcPxRoTTaHBpDCwF8LeA73k3TidKXCK",
-    "pythPriceId": "0x72b021217ca3fe68922a19aaf990109cb9d84e9ad004b4d2025ad6f529314419",
-    "decimals": 5,
-    "extOracleAddress": "DBE3N8uNjhKPRHfANdwGvCZghWXyLPdqdSbEW2XFwBiX",
-    "pythTicker": "Crypto.BONK/USD"
-  },
-  {
-    "symbol": "PENGU",
-    "intOracleAddress": "HkbXAhndY1nErJ176ncjSYait341g23mBLcsRpFSM4QP",
-    "pythPriceId": "0xbed3097008b9b5e3c93bec20be79cb43986b85a996475589351a21e67bae9b61",
-    "decimals": 6,
-    "extOracleAddress": "27zzC5wXCeZeuJ3h9uAJzV5tGn6r5Tzo98S1ZceYKEb8",
-    "pythTicker": "Crypto.PENGU/USD"
-  },
-  {
-    "symbol": "PUMP",
-    "intOracleAddress": "3jdC8MKggXxFKPMV5LDNbJz24zGdneTWnuF3MvnjdTX7",
-    "pythPriceId": "0x7a01fca212788bba7c5bf8c9efd576a8a722f070d2c17596ff7bb609b8d5c3b9",
-    "decimals": 6,
-    "extOracleAddress": "HMm3GPbdnqGwbkTnUUqCFsH8AMHDdEC3Lg8gcPD3HJSH",
-    "pythTicker": "Crypto.PUMP/USD"
-  },
-  {
-    "symbol": "WIF",
-    "intOracleAddress": "4jibMQPD7xKhsU8tsrMcbKLrd7ADdRJDLr61CG4NGvQm",
-    "pythPriceId": "0x4ca4beeca86f0d164160323817a4e42b10010a724c2217c6ee41b54cd4cc61fc",
-    "decimals": 6,
-    "extOracleAddress": "6B23K3tkb51vLZA14jcEQVCA1pfHptzEHFA93V5dYwbT",
-    "pythTicker": "Crypto.WIF/USD"
-  },
-  {
-    "symbol": "SAMO",
-    "intOracleAddress": "7SMPa7rEnjgeDjp8S6i9yH522SXK2vQwNModGxcA5U8Y",
-    "pythPriceId": "0x49601625e1a342c1f90c3fe6a03ae0251991a1d76e480d2741524c29037be28a",
-    "decimals": 9,
-    "extOracleAddress": "2eUVzcYccqXzsDU1iBuatUaDCbRKBjegEaPPeChzfocG",
-    "pythTicker": "Crypto.SAMO/USD"
-  },
-  {
-    "symbol": "FARTCOIN",
-    "intOracleAddress": "CXUxUV4tsf7sYnX52KrKDdkskyGGHXGkQgDHXf2fk2UW",
-    "pythPriceId": "58cd29ef0e714c5affc44f269b2c1899a52da4169d7acc147b9da692e6953608",
-    "decimals": 6,
-    "extOracleAddress": "2t8eUbYKjidMs3uSeYM9jXM9uudYZwGkSeTB4TKjmvnC",
-    "pythTicker": "Crypto.FARTCOIN/USD"
-  }
+	{
+		"symbol": "USDC",
+		"intOracleAddress": "GCtJxWQ57B3BJUYdWrhb3TUxzeiDUx275ZCxKkTV6G3N",
+		"pythPriceId": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+		"decimals": 6,
+		"extOracleAddress": "Dpw1EAVrSB1ibxiDQyTAW6Zip3J4Btk2x4SgApQCeFbX",
+		"pythTicker": "Crypto.USDC/USD"
+	},
+	{
+		"symbol": "SOL",
+		"intOracleAddress": "DXqtMo8qRBfHcK11kBnSaCSXkWKk1huMf94R6sAxLHtf",
+		"pythPriceId": "0xef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d",
+		"decimals": 9,
+		"extOracleAddress": "7UVimffxr9ow1uXYxsr4LHAcV58mLzhmwaeKvJ1pjLiE",
+		"pythTicker": "Crypto.SOL/USD"
+	},
+	{
+		"symbol": "BTC",
+		"intOracleAddress": "BYj2rSPK5JcvvVZGBN88j1TmW7mmtf1Rx3GMTqvdwB5c",
+		"pythPriceId": "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43",
+		"decimals": 8,
+		"extOracleAddress": "4cSM2e6rvbGQUFiJbqytoVMi5GgghSMr8LwVrT9VPSPo",
+		"pythTicker": "Crypto.BTC/USD"
+	},
+	{
+		"symbol": "ETH",
+		"intOracleAddress": "31QzXaaxY3XTfLM6QmSfELLFowQaNe6ytiT3GXpxBcbh",
+		"pythPriceId": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+		"decimals": 8,
+		"extOracleAddress": "42amVS4KgzR9rA28tkVYqVXjq9Qa8dcZQMbH5EYFX6XC",
+		"pythTicker": "Crypto.ETH/USD"
+	},
+	{
+		"symbol": "JITOSOL",
+		"intOracleAddress": "65cokPf6QQmNpdwurPQu1s1QWPdumMX8iJYjdhALsbGW",
+		"pythPriceId": "0x67be9f519b95cf24338801051f9a808eff0a578ccb388db73b7f6fe1de019ffb",
+		"decimals": 9,
+		"extOracleAddress": "AxaxyeDT8JnWERSaTKvFXvPKkEdxnamKSqpWbsSjYg1g",
+		"pythTicker": "Crypto.JITOSOL/USD"
+	},
+	{
+		"symbol": "XAU",
+		"intOracleAddress": "9JUUs2uFLHmPo6gTXJecYB6txdY2VXV2tfu2WQQjsNAu",
+		"pythPriceId": "0x765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2",
+		"decimals": 6,
+		"extOracleAddress": "2uPQGpm8X4ZkxMHxrAW1QuhXcse1AHEgPih6Xp9NuEWW",
+		"pythTicker": "Metal.XAU/USD"
+	},
+	{
+		"symbol": "XAG",
+		"intOracleAddress": "8Fwj8PHmoXzX7XMSiCiSvCwXTdfJ9U9SPcu4gbN3mCUN",
+		"pythPriceId": "0xf2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e",
+		"decimals": 6,
+		"extOracleAddress": "H9JxsWwtDZxjSL6m7cdCVsWibj3JBMD9sxqLjadoZnot",
+		"pythTicker": "Metal.XAG/USD"
+	},
+	{
+		"symbol": "EUR",
+		"intOracleAddress": "Fs9bKiF3eZMkQic39UD96A1jTqgrYHARCaPQ5MppYWay",
+		"pythPriceId": "0xa995d00bb36a63cef7fd2c287dc105fc8f3d93779f062f09551b0af3e81ec30b",
+		"decimals": 6,
+		"extOracleAddress": "Fu76ChamBDjE8UuGLV6GP2AcPPSU6gjhkNhAyuoPm7ny",
+		"pythTicker": "FX.EUR/USD"
+	},
+	{
+		"symbol": "GBP",
+		"intOracleAddress": "Gsy7UDnDQYVKcEcNtu8TZbjuE5eDaMsdQEJwygmMT6Ro",
+		"pythPriceId": "0x84c2dde9633d93d1bcad84e7dc41c9d56578b7ec52fabedc1f335d673df0a7c1",
+		"decimals": 6,
+		"extOracleAddress": "G25Tm7UkVruTJ7mcbCxFm45XGWwsH72nJKNGcHEQw1tU",
+		"pythTicker": "FX.GBP/USD"
+	},
+	{
+		"symbol": "CRUDEOIL",
+		"intOracleAddress": "5qLQ3BT7JCf4fUxoAH1xZwHCca9fZuuTWTgTsNxLNcoZ",
+		"pythPriceId": "0xeca3fb7e6be5be55a01678ee00f6405b9e4986e32d539ccd2a06a57e0c615880",
+		"decimals": 6,
+		"extOracleAddress": "nt1JuGVRBJNrvMpdZt9RJnxVSxRuoeVx5LRq3R1bS16",
+		"pythTicker": "Commodities.WTI1M"
+	},
+	{
+		"symbol": "JUP",
+		"intOracleAddress": "72rMJMG5jyAsiVXkxde2zWgELXj1yfqc3sYgAj1ENYns",
+		"pythPriceId": "0x0a0408d619e9380abad35060f9192039ed5042fa6f82301d0e48bb52be830996",
+		"decimals": 6,
+		"extOracleAddress": "7dbob1psH1iZBS7qPsm3Kwbf5DzSXK8Jyg31CTgTnxH5",
+		"pythTicker": "Crypto.JUP/USD"
+	},
+	{
+		"symbol": "PYTH",
+		"intOracleAddress": "7HWfFZn87wBjpexboZBcV35UjTYmeaS9Kdg5jcHsbqdr",
+		"pythPriceId": "0x0bbf28e9a841a1cc788f6a361b17ca072d0ea3098a1e5df1c3922d06719579ff",
+		"decimals": 6,
+		"extOracleAddress": "8vjchtMuJNY4oFQdTi8yCe6mhCaNBFaUbktT482TpLPS",
+		"pythTicker": "Crypto.PYTH/USD"
+	},
+	{
+		"symbol": "JTO",
+		"intOracleAddress": "E2jXqDkASx9njXWhnnjDGxefcEw8LoeyD3We2g3Ja5pX",
+		"pythPriceId": "0xb43660a5f790c69354b0729a5ef9d50d68f1df92107540210b9cccba1f947cc2",
+		"decimals": 9,
+		"extOracleAddress": "7ajR2zA4MGMMTqRAVjghTKqPPn4kbrj3pYkAVRVwTGzP",
+		"pythTicker": "Crypto.JTO/USD"
+	},
+	{
+		"symbol": "RAY",
+		"intOracleAddress": "4RBgyAzw964UJa7QTjpq52h29YrBuyCrkfYAXbWzgV5v",
+		"pythPriceId": "0x91568baa8beb53db23eb3fb7f22c6e8bd303d103919e19733f2bb642d3e7987a",
+		"decimals": 6,
+		"extOracleAddress": "Hhipna3EoWR7u8pDruUg8RxhP5F6XLh6SEHMVDmZhWi8",
+		"pythTicker": "Crypto.RAY/USD"
+	},
+	{
+		"symbol": "KMNO",
+		"intOracleAddress": "4tNprL7ziCzxHotNnuNWE8Z8znvQbg2irng4SEyjy9rs",
+		"pythPriceId": "0xb17e5bc5de742a8a378b54c9c75442b7d51e30ada63f28d9bd28d3c0e26511a0",
+		"decimals": 6,
+		"extOracleAddress": "ArjngUHXrQPr1wH9Bqrji9hdDQirM6ijbzc1Jj1fXUk7",
+		"pythTicker": "Crypto.KMNO/USD"
+	},
+	{
+		"symbol": "BONK",
+		"intOracleAddress": "J7ruj3xnMc3etbcPxRoTTaHBpDCwF8LeA73k3TidKXCK",
+		"pythPriceId": "0x72b021217ca3fe68922a19aaf990109cb9d84e9ad004b4d2025ad6f529314419",
+		"decimals": 5,
+		"extOracleAddress": "DBE3N8uNjhKPRHfANdwGvCZghWXyLPdqdSbEW2XFwBiX",
+		"pythTicker": "Crypto.BONK/USD"
+	},
+	{
+		"symbol": "PENGU",
+		"intOracleAddress": "HkbXAhndY1nErJ176ncjSYait341g23mBLcsRpFSM4QP",
+		"pythPriceId": "0xbed3097008b9b5e3c93bec20be79cb43986b85a996475589351a21e67bae9b61",
+		"decimals": 6,
+		"extOracleAddress": "27zzC5wXCeZeuJ3h9uAJzV5tGn6r5Tzo98S1ZceYKEb8",
+		"pythTicker": "Crypto.PENGU/USD"
+	},
+	{
+		"symbol": "PUMP",
+		"intOracleAddress": "3jdC8MKggXxFKPMV5LDNbJz24zGdneTWnuF3MvnjdTX7",
+		"pythPriceId": "0x7a01fca212788bba7c5bf8c9efd576a8a722f070d2c17596ff7bb609b8d5c3b9",
+		"decimals": 6,
+		"extOracleAddress": "HMm3GPbdnqGwbkTnUUqCFsH8AMHDdEC3Lg8gcPD3HJSH",
+		"pythTicker": "Crypto.PUMP/USD"
+	},
+	{
+		"symbol": "WIF",
+		"intOracleAddress": "4jibMQPD7xKhsU8tsrMcbKLrd7ADdRJDLr61CG4NGvQm",
+		"pythPriceId": "0x4ca4beeca86f0d164160323817a4e42b10010a724c2217c6ee41b54cd4cc61fc",
+		"decimals": 6,
+		"extOracleAddress": "6B23K3tkb51vLZA14jcEQVCA1pfHptzEHFA93V5dYwbT",
+		"pythTicker": "Crypto.WIF/USD"
+	},
+	{
+		"symbol": "SAMO",
+		"intOracleAddress": "7SMPa7rEnjgeDjp8S6i9yH522SXK2vQwNModGxcA5U8Y",
+		"pythPriceId": "0x49601625e1a342c1f90c3fe6a03ae0251991a1d76e480d2741524c29037be28a",
+		"decimals": 9,
+		"extOracleAddress": "2eUVzcYccqXzsDU1iBuatUaDCbRKBjegEaPPeChzfocG",
+		"pythTicker": "Crypto.SAMO/USD"
+	},
+	{
+		"symbol": "FARTCOIN",
+		"intOracleAddress": "CXUxUV4tsf7sYnX52KrKDdkskyGGHXGkQgDHXf2fk2UW",
+		"pythPriceId": "58cd29ef0e714c5affc44f269b2c1899a52da4169d7acc147b9da692e6953608",
+		"decimals": 6,
+		"extOracleAddress": "2t8eUbYKjidMs3uSeYM9jXM9uudYZwGkSeTB4TKjmvnC",
+		"pythTicker": "Crypto.FARTCOIN/USD"
+	}
 ]

@@ -1,29 +1,19 @@
 import fetchInternalPrices from "./fetchInternalPrices"
 import { fetchLatestPythPrices } from "./fetchPythPrices"
-import extractTokens from "./utils/extractTokens"
+import tokenMetadata from "../data/configTokens.json"
 
 async function main() {
-	const internalPrices = await fetchInternalPrices()
-	const tokenMetadata = await extractTokens()
-
-	const pythPriceIdMap = tokenMetadata.reduce((acc, token) => {
-		if (token.pythPriceId) {
-			acc[token.symbol.toUpperCase()] = token.pythPriceId.toLowerCase()
-		}
-		return acc
-	}, {} as Record<string, string>)
-
-	// console.log("Pyth ID Map:", pythPriceIdMap)
-
-	const pythPriceIds = Object.values(pythPriceIdMap)
-	const pythPrices = await fetchLatestPythPrices(pythPriceIds)
-
+	const [internalPrices, pythPrices] = await Promise.all([
+		fetchInternalPrices(),
+		fetchLatestPythPrices(),
+	])
 	const result: Record<string, any> = {}
 
-	for (const symbol of Object.keys(internalPrices)) {
+	for (const token of tokenMetadata) {
+		const symbol = token.symbol.toUpperCase()
+		const priceId = token.pythPriceId?.toLowerCase().replace(/^0x/, "")
 		const internal = internalPrices[symbol]
-		const priceId = pythPriceIdMap[symbol.toUpperCase()]?.toLowerCase().replace(/^0x/, "")
-		const pyth = pythPrices[priceId]
+		const pyth = priceId ? pythPrices[priceId] : undefined
 
 		const diff = internal !== undefined && pyth !== undefined ? internal - pyth : undefined
 		const diffPercent =
