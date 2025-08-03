@@ -1,17 +1,17 @@
 import { PublicKey } from "@solana/web3.js"
 // @ts-ignore
 import * as BufferLayout from "buffer-layout"
-import fs from "fs"
-import path from "path"
 import { connection } from "./utils/connection"
 import configTokens from "../data/configTokens.json"
 
 const s64 = (property: string) =>
+	// @ts-ignore
 	BufferLayout.struct([BufferLayout.u32("low"), BufferLayout.s32("high")], property)
 
 const layout = BufferLayout.struct([
 	BufferLayout.blob(8),
 	s64("price"),
+	// @ts-ignore
 	BufferLayout.s32("exponent"),
 ])
 
