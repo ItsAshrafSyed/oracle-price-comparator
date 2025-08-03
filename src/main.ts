@@ -7,6 +7,9 @@ import tokenMetadata from "../data/configTokens.json"
 const app = express()
 app.use(cors())
 
+const deltaHistory: Record<string, number[]> = {}
+const MAX_HISTORY_LENGTH = 60 * 60 // 60 minutes assuming 1 data point per second
+
 app.get("/prices/stream", async (req, res) => {
 	res.setHeader("Content-Type", "text/event-stream")
 	res.setHeader("Cache-Control", "no-cache")
@@ -31,11 +34,27 @@ app.get("/prices/stream", async (req, res) => {
 					? (diff / pyth) * 100
 					: undefined
 
+			if (!deltaHistory[symbol]) {
+				deltaHistory[symbol] = []
+			}
+
+			if (typeof diffPercent === "number") {
+				deltaHistory[symbol].push(Math.abs(diffPercent))
+				if (deltaHistory[symbol].length > MAX_HISTORY_LENGTH) {
+					deltaHistory[symbol].shift()
+				}
+			}
+
+			const maxDiffPercent = deltaHistory[symbol]?.length
+				? Math.max(...deltaHistory[symbol])
+				: undefined
+
 			result[symbol] = {
 				internal,
 				pyth,
 				diff,
 				diffPercent,
+				maxDiffPercent,
 			}
 		}
 
@@ -50,7 +69,7 @@ app.get("/prices/stream", async (req, res) => {
 	})
 })
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`)
 })
