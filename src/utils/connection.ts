@@ -1,7 +1,6 @@
 import { Connection } from "@solana/web3.js"
+import "dotenv/config"
 
-// Replace this with your custom RPC endpoint
-const RPC_ENDPOINT =
-	"https://flashtr-flash-885f.mainnet.rpcpool.com/b7c56ef6-f1fa-44cd-97be-484dfb73e002"
+const RPC_ENDPOINT = process.env.RPC_ENDPOINT
 
-export const connection = new Connection(RPC_ENDPOINT, "confirmed")
+export const connection = new Connection(RPC_ENDPOINT ?? "", "confirmed")

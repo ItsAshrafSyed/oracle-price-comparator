@@ -1,5 +1,8 @@
 import axios from "axios"
 import configTokens from "../data/configTokens.json"
+import "dotenv/config"
+
+const PYTH_BASE_URL = process.env.PYTH_BASE_URL
 
 export async function fetchLatestPythPrices(): Promise<Record<string, number>> {
 	const result: Record<string, number> = {}
@@ -7,7 +10,7 @@ export async function fetchLatestPythPrices(): Promise<Record<string, number>> {
 		const queryParams = Object.values(configTokens)
 			.map((token) => `ids[]=${token.pythPriceId}`)
 			.join("&")
-		const url = `https://hermes.pyth.network/v2/updates/price/latest?${queryParams}&parsed=true&ignore_invalid_price_ids=true`
+		const url = `${PYTH_BASE_URL}?${queryParams}&parsed=true&ignore_invalid_price_ids=true`
 		const { data } = await axios.get(url)
 
 		if (Array.isArray(data?.parsed)) {
